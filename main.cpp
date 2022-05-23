@@ -69,6 +69,10 @@ int main() {
         if (isdigit(input[i])) {
             if (check==0) {
                 numbers =input[i];
+                if (isdigit(input[i+1])) {
+                    numbers+=input[i+1];
+                    i=i+1;
+                }
                 array1.push_back(stoi(numbers));
             }
             else {
