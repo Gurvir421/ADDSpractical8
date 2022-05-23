@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <limits>
 #include "LinkedList.h"
 using namespace std;
 
@@ -157,7 +157,21 @@ void LinkedList::deletePosition(int position) {
 }
 
 int LinkedList::getItem(int position) {
-    return 1;
+    
+    if (position>size) {
+        cout << "std::numeric_limits < int >::max() ";
+        return std::numeric_limits < int >::max();  
+    }
+     int counter=0;
+    Node *the=head;
+    Node *before=head;
+    
+    while((the!=NULL)&&(counter!=position-1)) {
+        the=the->getnode();
+        counter++;
+    }
+    cout << the->getdata() <<endl;
+    return the->getdata();
 }
 
 void LinkedList::printItems() {
