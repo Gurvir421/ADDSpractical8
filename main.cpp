@@ -52,8 +52,8 @@ int main() {
     hello.printItems();
     */
     vector <int> array1;
-    int para1;
-    int para2;
+    int para1=-1;
+    int para2=-1;
     
     string input;
     string numbers="";
@@ -63,9 +63,9 @@ int main() {
     
     int check=0;
     int count=0;
+    int size=input.size();
     
-    
-    for (int i=0;i<input.size();i++) {
+    for (int i=0;i<size;i++) {
         if (isdigit(input[i])) {
             if (check==0) {
                 numbers =input[i];

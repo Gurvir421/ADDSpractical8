@@ -93,14 +93,14 @@ void LinkedList::addAtPosition(int position, int newItem) {
 
 int LinkedList::search(int item) {
     Node *the=head;
-    int pos=0;
-    int check=1;
+    int pos=0; 
+   
     while ((the!=NULL)&&(the->getdata()!=item)) {
         the=the->getnode();
         pos++;
         
         if (the==NULL) {
-            check=0;
+            
             pos=0;
         }
     }
