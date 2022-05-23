@@ -142,7 +142,7 @@ void LinkedList::deletePosition(int position) {
     int counter=0;
     int check=0;
     
-    while((the!=NULL)&&(counter!=position)) {
+    while((the!=NULL)&&(counter!=position-1)) {
         if (check==1) {
             before=before->getnode();
         }

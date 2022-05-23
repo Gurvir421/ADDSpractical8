@@ -87,7 +87,7 @@ int main() {
             }
     
         }
-        if ((input[i]=='A')||(input[i]=='S')||(input[i]=='G')) {
+        if ((input[i]=='A')||(input[i]=='S')||(input[i]=='G')||(input[i]=='D')) {
             task+=input[i];
             task+=input[i+1];
             check=1;
